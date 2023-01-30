@@ -15,17 +15,55 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var timer: Timer!
     
     // MARK: IBOutlets
+    @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var btnPrev: UIButton!
     @IBOutlet var playPauseButton: UIButton!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblSinger: UILabel!
+    
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var progressSlider: UISlider!
+    
+    var index:Int?
     
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        indexChanged()
+        //        맨 첫 번째 음악 버튼 backward button 비활성화(Enabled)
+        if index! <= 0 {btnPrev.isEnabled = false}
+        //        맨 마지막 음악 버튼 forward button 비활성화(Enabled)
+        if index! >= music.count-1 {btnNext.isEnabled = false}
+
         //        self.addViewsWithCode()
         self.initializePlayer()
         // Do any additional setup after loading the view.
     }
+    
+    fileprivate func indexChanged() {
+        let song:Music = music[index!]
+        imageView.image = UIImage(named: song.albumImage)
+        lblTitle.text = song.title
+        lblSinger.text = song.singer
+    }
+    
+    @IBAction func actNext(_ sender: UIButton) {
+        index! += 1
+        if index! >= music.count-1 { sender.isEnabled = false }
+        else if index! < music.count-1 { btnPrev.isEnabled = true }
+        indexChanged()
+    }
+    
+    
+    @IBAction func actPrev(_ sender: UIButton) {
+        index! -= 1
+        if index! <= 0  { sender.isEnabled = false }
+        else if index! > 0 { btnNext.isEnabled = true }
+        indexChanged()
+    }
+    
     
     // MARK: - Methods
     // MARK: Custom Method
