@@ -63,6 +63,8 @@ class MainTableViewController: UITableViewController {
         let vc = segue.destination as? MusicViewController
         
         vc?.index = selectedIndexPath.row
+        vc?.musiclyrics = music[selectedIndexPath.row]
+        
     }
     
     

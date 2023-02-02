@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A62E0F25298A5E5600A13371 /* LyricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E0F24298A5E5600A13371 /* LyricsViewController.swift */; };
 		A67F52BE297C285F00DDE127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67F52BD297C285F00DDE127 /* AppDelegate.swift */; };
 		A67F52C0297C285F00DDE127 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67F52BF297C285F00DDE127 /* SceneDelegate.swift */; };
 		A67F52C2297C285F00DDE127 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67F52C1297C285F00DDE127 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A62E0F24298A5E5600A13371 /* LyricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsViewController.swift; sourceTree = "<group>"; };
 		A67F52BA297C285F00DDE127 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67F52BD297C285F00DDE127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A67F52BF297C285F00DDE127 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				A67F52C1297C285F00DDE127 /* ViewController.swift */,
 				A69ABDA82988326600076A56 /* MainTableViewController.swift */,
 				A69ABDAA2988329F00076A56 /* MusicViewController.swift */,
+				A62E0F24298A5E5600A13371 /* LyricsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				A67F52C2297C285F00DDE127 /* ViewController.swift in Sources */,
 				A67F52BE297C285F00DDE127 /* AppDelegate.swift in Sources */,
 				A67F52C0297C285F00DDE127 /* SceneDelegate.swift in Sources */,
+				A62E0F25298A5E5600A13371 /* LyricsViewController.swift in Sources */,
 				A69ABDAD298832BB00076A56 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

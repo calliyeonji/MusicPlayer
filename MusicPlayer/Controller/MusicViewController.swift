@@ -27,11 +27,15 @@ class MusicViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet var progressSlider: UISlider!
     
     var index:Int?
+    var musiclyrics:Music?
     
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         indexChanged()
+        
+//        musiclyricsChanged()
+        
         //        btnPrev.isEnabled = false
         //        맨 첫 번째 음악 버튼 backward button 비활성화(Enabled)
         if index! <= 0 {btnPrev.isEnabled = false}
@@ -48,6 +52,22 @@ class MusicViewController: UIViewController, AVAudioPlayerDelegate {
         lblTitle.text = song.title
         lblSinger.text = song.singer
     }
+    
+//    @IBOutlet weak var lbllyrics: UILabel!
+//
+//    var Lyrics:String?
+//
+//    fileprivate func musiclyricsChanged() {
+//        if let Lyrics = Lyrics {
+//            lbllyrics.text = Lyrics
+//        }
+//    }
+    
+//    fileprivate func musiclyricsChanged() {
+//        let lyrics:Music = music[musiclyrics]
+//        lbllyrics.text = musiclyrics.lyrics
+//
+//    }
     
     @IBAction func actNext(_ sender: UIButton) {
         index! += 1
@@ -257,6 +277,17 @@ class MusicViewController: UIViewController, AVAudioPlayerDelegate {
         self.progressSlider.value = 0
         self.updateTimeLabelText(time: 0)
         self.invalidateTimer()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        let vc = segue.destination as? LyricsViewController
+        if let lyricsView = musiclyrics {
+            vc?.Lyrics = lyricsView.lyrics
+        }
+        
     }
     
 }
