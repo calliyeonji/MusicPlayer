@@ -16,7 +16,53 @@ struct Music {
 }
 
 let music:[Music] = [
-    Music(title: "Breathe", singer: "Lauv", length: "3:58", albumImage: "1", lyrics: "1번가사"),
+    Music(title: "Breathe", singer: "Lauv", length: "3:58", albumImage: "1", lyrics: """
+          I've watched those eyes light up with a smile
+          River in the not good times
+          Oh, you taught me all that I know
+          I've seen your soul grow just like a rose
+          Made it through all of those thorns
+          Girl into the woman I know
+          And it's killing me, me to say "I'm fine, " "I'm fine"
+          When I really mean, mean to say
+          You're my all and more
+          All I know you taught me, yeah
+          You're my all and more
+          But I need room to breathe, yeah
+          I found New York laying in your arms
+          We'll melt into the bedroom floor
+          Never knew I'd stay for so long
+          And this truth cuts
+          Not through one, but both not through one, but both of us
+          But it's deeper if I hold on
+          And it's killing me, me to say "I'm fine, " "I'm fine"
+          When I really mean, mean to say
+          You're my all and more
+          All I know you taught me, yeah
+          You're my all and more
+          But I need room to breathe, yeah
+          Uh
+          Uh
+          Uh
+          Gotta breathe for me, it's now or never
+          Gotta breathe for me, it's now or never
+          Uh
+          Uh
+          I should leave, 'cause you deserve better, better
+          Gave my all and more
+          But I need room to be me
+          You're my all and more
+          All I know you taught me, yeah
+          You're my all and more
+          But I need room to breathe, yeah
+          Uh
+          Uh
+          Breathe
+          Uh
+          Uh
+          Uh
+          Breathe
+          """),
     Music(title: "Stupid", singer: "eldon", length: "3:23", albumImage: "2", lyrics: "2번가사"),
     Music(title: "Good For You", singer: "Peder Elias", length: "2:42", albumImage: "3", lyrics: "3번가사"),
     Music(title: "Smells Like Me", singer: "Charlie Puth", length: "3:25", albumImage: "4", lyrics: "4번가사"),
