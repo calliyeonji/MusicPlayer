@@ -184,24 +184,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqY-Jd-n5Z">
-                                <rect key="frame" x="0.0" y="159" width="393" height="465"/>
+                                <rect key="frame" x="40" y="159" width="307" height="465"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가사보기" lineBreakMode="tailTruncation" numberOfLines="86" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vE9-Et-CkC">
-                                        <rect key="frame" x="46.666666666666657" y="0.0" width="300" height="465"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="ixd-yV-dmb"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="465"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="vE9-Et-CkC" firstAttribute="top" secondItem="AA4-oS-vKR" secondAttribute="top" id="7Dw-2k-pUG"/>
-                                    <constraint firstAttribute="bottom" secondItem="vE9-Et-CkC" secondAttribute="bottom" constant="50" id="8vE-8g-RXn"/>
-                                    <constraint firstItem="vE9-Et-CkC" firstAttribute="centerY" secondItem="aqY-Jd-n5Z" secondAttribute="centerY" id="Nq4-Dz-jp0"/>
-                                    <constraint firstAttribute="trailing" secondItem="vE9-Et-CkC" secondAttribute="trailing" id="UWx-zn-hsD"/>
-                                    <constraint firstItem="vE9-Et-CkC" firstAttribute="centerX" secondItem="aqY-Jd-n5Z" secondAttribute="centerX" id="ulc-Jq-Skp"/>
+                                    <constraint firstAttribute="bottom" secondItem="vE9-Et-CkC" secondAttribute="bottom" constant="1" id="JD2-Il-Ida"/>
+                                    <constraint firstItem="vE9-Et-CkC" firstAttribute="leading" secondItem="AA4-oS-vKR" secondAttribute="leading" id="JWY-Sx-B5Y"/>
+                                    <constraint firstItem="AA4-oS-vKR" firstAttribute="trailing" secondItem="vE9-Et-CkC" secondAttribute="trailing" id="beQ-2N-SzS"/>
+                                    <constraint firstItem="vE9-Et-CkC" firstAttribute="bottom" secondItem="AA4-oS-vKR" secondAttribute="bottom" id="iah-mu-mlZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="vE9-Et-CkC" secondAttribute="trailing" id="lXw-8d-SvT"/>
+                                    <constraint firstItem="vE9-Et-CkC" firstAttribute="top" secondItem="Fm2-AE-Uxe" secondAttribute="top" id="o6M-uv-ppB"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Fm2-AE-Uxe"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="AA4-oS-vKR"/>
@@ -210,10 +208,10 @@
                         <viewLayoutGuide key="safeArea" id="6xU-U0-Slh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aqY-Jd-n5Z" firstAttribute="leading" secondItem="6xU-U0-Slh" secondAttribute="leading" id="2Fe-Is-NYK"/>
-                            <constraint firstItem="aqY-Jd-n5Z" firstAttribute="centerX" secondItem="38U-Qd-o66" secondAttribute="centerX" id="fsh-4a-0ai"/>
-                            <constraint firstItem="aqY-Jd-n5Z" firstAttribute="top" secondItem="6xU-U0-Slh" secondAttribute="top" constant="100" id="iVM-oZ-Dzg"/>
-                            <constraint firstItem="aqY-Jd-n5Z" firstAttribute="centerY" secondItem="38U-Qd-o66" secondAttribute="centerY" id="oXN-Di-4u4"/>
+                            <constraint firstItem="aqY-Jd-n5Z" firstAttribute="leading" secondItem="6xU-U0-Slh" secondAttribute="leading" constant="40" id="2Ni-Ny-IWu"/>
+                            <constraint firstItem="aqY-Jd-n5Z" firstAttribute="centerY" secondItem="38U-Qd-o66" secondAttribute="centerY" id="OnE-XD-mV0"/>
+                            <constraint firstItem="6xU-U0-Slh" firstAttribute="trailing" secondItem="aqY-Jd-n5Z" secondAttribute="trailing" constant="46" id="Yss-zu-3wh"/>
+                            <constraint firstItem="aqY-Jd-n5Z" firstAttribute="top" secondItem="6xU-U0-Slh" secondAttribute="top" constant="100" id="e2c-4E-ouI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eiH-n9-Hcn"/>
