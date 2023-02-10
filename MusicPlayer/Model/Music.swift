@@ -63,7 +63,62 @@ let music:[Music] = [
           Uh
           Breathe
           """),
-    Music(title: "Stupid", singer: "eldon", length: "3:23", albumImage: "2", lyrics: "2번가사"),
+    Music(title: "Stupid", singer: "eldon", length: "3:23", albumImage: "2", lyrics: """
+        2:15 calling me up
+        That's your thing, mixing all up
+        I drank too much, come pick me up
+        You call me only when you want
+        I know you too well
+        3:16 picked you up
+        That's your thing, acting it up
+        Maybe you had a break up
+        Why am I carrying you on my back
+        Don't call me 'honey'
+        Since 2002 we just hung out together
+        Crazy 'bout 'e.t'
+        But didn't know about aliens
+        Sometimes we fought and
+        Sometimes we cried and
+        Sometimes we lost it
+        Before we started kissin'
+        Stupid (stupid)
+        Why you calling me stupid?
+        Nothing (nothing)
+        Did you say it all means nothing?
+        Maybe you're right, always damn right
+        I thought that you felt the same way
+        That makes me feel helpless
+        I'm so stupid
+        Tell me that was a joke
+        My only hope
+        My weakened heart tells me that
+        I'm suffering
+        Broken heart syndrome
+        And then tears me to pieces (to pieces)
+        Since 2016 we were stuck together
+        Crazy 'bout 'Notebook'
+        But didn't know about love
+        Always you're pissed off
+        Always you break my heart
+        Always you run away
+        Before I say we're done
+        Stupid (stupid)
+        Why you calling me stupid?
+        Nothing (nothing)
+        Did you say it all means nothing?
+        Maybe you're right, always damn right
+        I thought that you felt the same way
+        That makes me feel helpless
+        I'm so stupid (I'm so stupid)
+        You thought you're a thief
+        But you'll never know
+        I'm the one who was giving
+        But you'll never know
+        There's no one like me
+        But you'll never know
+        I'm a dying breed
+        But you'll never know
+    """),
     Music(title: "Good For You", singer: "Peder Elias", length: "2:42", albumImage: "3", lyrics: "3번가사"),
     Music(title: "Smells Like Me", singer: "Charlie Puth", length: "3:25", albumImage: "4", lyrics: "4번가사"),
     Music(title: "Roses", singer: "Finn Askew", length: "3:22", albumImage: "5", lyrics: "5번가사"),
